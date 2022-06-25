@@ -2,6 +2,7 @@
   <h1>Panier</h1>
  
   <?php 
+  var_dump($_POST);
   if(!empty($panier)){ ?>
     <form action="index.php?p=panier.recapitulatif" method="POST" class="formulaire-panier">
         <?php foreach ($panier as $idProduit => $champs): ?>
