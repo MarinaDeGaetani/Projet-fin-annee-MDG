@@ -19,7 +19,7 @@
 
 <header>
     <!-- Classic Menu -->
-    <nav class="navbar">
+    <nav class="navbar-head">
         <div class="container-nav">
             <div class="navbar-header">
                 <div class="hearder-responsive">
@@ -197,7 +197,7 @@
     </nav>
 </header>
 
-<div class="container" style="margin:0; padding:0; width:100%;">
+<div class="container-infos" style="margin:0; padding:0; width:100%;">
 
         <?= $content; ?>
 

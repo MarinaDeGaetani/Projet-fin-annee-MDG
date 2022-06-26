@@ -3,35 +3,36 @@
 
 <div class="container-rec">
     <h1>Récapitulatif de la commande</h1>
-    <div class="row">
-    <?php 
-    var_dump($produitsAll);
-    foreach($produitsAll['produit'] as $produit){ ?>
-        <div class="col-lg-1 col-12">
-            <p>Id : <?=$produit['produit']->id ?></p>
-        </div>
-        <div class="col-lg-2 col-12">
-            <p>Titre : <?=$produit['produit']->titre ?></p>
-        </div>
-        <div class="col-lg-3 col-12">
-            <img src="../public/img/upload/<?= $produit['produit']->img; ?>">
-        </div>
-        <div class="col-lg-3 col-12">
-            <p>Nbr : <?=$produit['produit-nbr'] ?></p>
-        </div>
-        <div class="col-lg-3 col-12">
-            <p>Total : <?=$produit['produit-total'] ?>€</p>
+        <div class="prods">
+        <?php foreach($produitsAll['produit'] as $produit){ ?>
+            <!--<div class="infos-recap">
+                <p>Id : </*?=$produit['produit']->id ?></p>
+            </div>-->
+            <div class="infos-recap">
+                <img src="../public/img/upload/<?= $produit['produit']->img; ?>" class="recap-img">
+            </div>
+            <div class="infos-recap">
+                <p>Titre : <?=$produit['produit']->titre ?></p>
+            </div>
+            <div class="infos-recap">
+                <p>Nbr : <?=$produit['produit-nbr'] ?></p>
+            </div>
+            <div class="infos-recap">
+                <p>Total : <?=$produit['produit-total'] ?>€</p>
+            </div>
         </div>
     <?php  
     }
 
     foreach($produitsAll['commande'] as $commande){ ?>
-        <div class="col-12">
-            <p>Total de la commande : <?=$commande?>€</p>
-        </div>
+    <div class="com-recap-tot">
+        <p>Total de la commande : <?=$commande?>€</p>
+    </div>
     <?php 
     }?>
-    <p><a href="index.php?p=panier.index"> Modifier la commande</a></p>
+    <div class="com-recap-tot">
+    <p><a href="index.php?p=panier.index" class="link-pink"> Modifier la commande</a></p>
+    </div>
 </div>
 
 <form action="index.php?p=panier.confirmation" method="POST">
@@ -57,7 +58,7 @@
   }  
 ?>
 
-  <div class="container">
+  <div class="container-rec">
         <div class="row">
             <div class="col-lg-4 mb-lg-0 mb-3">
                 <div class="card p-3">

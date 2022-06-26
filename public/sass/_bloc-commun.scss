@@ -1,6 +1,6 @@
 // Header
 header {
-  .navbar {
+  .navbar-head {
     margin: 0px;
     width: 100%;
     padding: 0px;
@@ -198,8 +198,12 @@ footer {
 
       div.email-form {
         display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+
         input.email {
-          margin: 52px 19px 24px 19px;
+          margin: 5px 0px 5px 19px;
           border: none;
           border-bottom: 1px solid $rose-fonce;
           background-color: none;
@@ -207,11 +211,9 @@ footer {
         img.icon-email {
           width: 24px;
           height: 24px;
-          position: relative;
-          top: 15px;
         }
         input.email:focus-visible {
-          border: none;
+          outline: none;
           border-bottom: 1px solid $rose-fonce;
         }
       }
@@ -320,7 +322,7 @@ div.formulaire {
   //Header
   body {
     header {
-      nav.navbar {
+      nav.navbar-head {
         div.container-nav {
           height: 150px;
           width: max-content;

@@ -2,7 +2,6 @@
   <h1>Panier</h1>
  
   <?php 
-  var_dump($_POST);
   if(!empty($panier)){ ?>
     <form action="index.php?p=panier.recapitulatif" method="POST" class="formulaire-panier">
         <?php foreach ($panier as $idProduit => $champs): ?>
@@ -51,7 +50,7 @@
           
           <div class="valid-pan">
             <button class="btn-1">
-              <a href="index.php?p=panier.recapitulatif" class="btn-typo">Valider le panier</a>
+              <p class="btn-typo">Valider le panier</p>
             </button>
           </div>
     </form>

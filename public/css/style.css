@@ -473,18 +473,18 @@ body .total,
   color: #000;
 }
 
-header .navbar {
+header .navbar-head {
   margin: 0px;
   width: 100%;
   padding: 0px;
 }
-header .navbar div.container-nav {
+header .navbar-head div.container-nav {
   background-color: #f2a7b5;
   height: 100px;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
   margin: 0px;
 }
-header .navbar div.container-nav div.navbar-header {
+header .navbar-head div.container-nav div.navbar-header {
   height: 100px;
   display: flex;
   align-items: center;
@@ -492,11 +492,11 @@ header .navbar div.container-nav div.navbar-header {
   align-content: center;
   flex-direction: row;
 }
-header .navbar div.container-nav div.navbar-header div.menu-burger,
-header .navbar div.container-nav div.navbar-header .menuToggle {
+header .navbar-head div.container-nav div.navbar-header div.menu-burger,
+header .navbar-head div.container-nav div.navbar-header .menuToggle {
   display: none;
 }
-header .navbar div.container-nav div.navbar-header div.hearder-responsive {
+header .navbar-head div.container-nav div.navbar-header div.hearder-responsive {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -504,16 +504,16 @@ header .navbar div.container-nav div.navbar-header div.hearder-responsive {
   justify-content: space-between;
   width: 100%;
 }
-header .navbar div.container-nav div.navbar-header div.hearder-responsive .logo {
+header .navbar-head div.container-nav div.navbar-header div.hearder-responsive .logo {
   margin-left: 20px;
 }
-header .navbar div.container-nav div.navbar-header div.hearder-responsive .logo img.logo {
+header .navbar-head div.container-nav div.navbar-header div.hearder-responsive .logo img.logo {
   width: 135px;
 }
-header .navbar div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul {
+header .navbar-head div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul {
   display: flex;
 }
-header .navbar div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu {
+header .navbar-head div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu {
   display: none;
   left: 98px;
   position: absolute;
@@ -524,51 +524,51 @@ header .navbar div.container-nav div.navbar-header div.hearder-responsive div.dr
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2509803922);
   border-radius: 0px 0px 15px 15px;
 }
-header .navbar div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div {
+header .navbar-head div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div {
   display: flex;
 }
-header .navbar div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div img.img-drop-down {
+header .navbar-head div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div img.img-drop-down {
   margin: 30px 35px 34px 25px;
   width: 360px;
   height: 364px;
   border-radius: 18px;
 }
-header .navbar div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div div.div-text-drop-down {
+header .navbar-head div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div div.div-text-drop-down {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 31px 105px 0px 0px;
 }
-header .navbar div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div div.div-text-drop-down .catégorie-dropdown {
+header .navbar-head div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div div.div-text-drop-down .catégorie-dropdown {
   display: flex;
   flex-direction: column;
   width: max-content;
   margin-top: 30px;
   align-items: flex-start;
 }
-header .navbar div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div div.div-text-drop-down div.sous-div-text-drop-down {
+header .navbar-head div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div div.div-text-drop-down div.sous-div-text-drop-down {
   display: flex;
   flex-direction: column;
 }
-header .navbar div.container-nav div.navbar-header .text-header-3:hover + .sous-menu,
-header .navbar div.container-nav div.navbar-header .text-header-2:hover + .sous-menu,
-header .navbar div.container-nav div.navbar-header .text-header:hover + .sous-menu {
+header .navbar-head div.container-nav div.navbar-header .text-header-3:hover + .sous-menu,
+header .navbar-head div.container-nav div.navbar-header .text-header-2:hover + .sous-menu,
+header .navbar-head div.container-nav div.navbar-header .text-header:hover + .sous-menu {
   display: block !important;
 }
-header .navbar div.container-nav div.btn-icons-header {
+header .navbar-head div.container-nav div.btn-icons-header {
   margin-right: 30px;
 }
-header .navbar div.container-nav div.btn-icons-header button.btn-header,
-header .navbar div.container-nav div.btn-icons-header .btn-header-2 {
+header .navbar-head div.container-nav div.btn-icons-header button.btn-header,
+header .navbar-head div.container-nav div.btn-icons-header .btn-header-2 {
   border: none;
   background: none;
   padding: 5px;
   cursor: pointer;
 }
-header .navbar div.container-nav div.btn-icons-header button.btn-header img.icons-header,
-header .navbar div.container-nav div.btn-icons-header button.btn-header img.svg-shop,
-header .navbar div.container-nav div.btn-icons-header .btn-header-2 img.icons-header,
-header .navbar div.container-nav div.btn-icons-header .btn-header-2 img.svg-shop {
+header .navbar-head div.container-nav div.btn-icons-header button.btn-header img.icons-header,
+header .navbar-head div.container-nav div.btn-icons-header button.btn-header img.svg-shop,
+header .navbar-head div.container-nav div.btn-icons-header .btn-header-2 img.icons-header,
+header .navbar-head div.container-nav div.btn-icons-header .btn-header-2 img.svg-shop {
   width: 24px;
 }
 
@@ -636,9 +636,12 @@ footer div.container-footer div.newsletter {
 }
 footer div.container-footer div.newsletter div.email-form {
   display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
 }
 footer div.container-footer div.newsletter div.email-form input.email {
-  margin: 52px 19px 24px 19px;
+  margin: 5px 0px 5px 19px;
   border: none;
   border-bottom: 1px solid #f26b8f;
   background-color: none;
@@ -646,11 +649,9 @@ footer div.container-footer div.newsletter div.email-form input.email {
 footer div.container-footer div.newsletter div.email-form img.icon-email {
   width: 24px;
   height: 24px;
-  position: relative;
-  top: 15px;
 }
 footer div.container-footer div.newsletter div.email-form input.email:focus-visible {
-  border: none;
+  outline: none;
   border-bottom: 1px solid #f26b8f;
 }
 
@@ -746,47 +747,47 @@ div.formulaire input.form-control:hover {
 }
 
 @media screen and (max-width: 376px) {
-  body header nav.navbar div.container-nav {
+  body header nav.navbar-head div.container-nav {
     height: 150px;
     width: max-content;
   }
-  body header nav.navbar div.container-nav div.navbar-header div.hearder-responsive {
+  body header nav.navbar-head div.container-nav div.navbar-header div.hearder-responsive {
     display: flex;
   }
-  body header nav.navbar div.container-nav div.navbar-header div.hearder-responsive div.menu-burger {
+  body header nav.navbar-head div.container-nav div.navbar-header div.hearder-responsive div.menu-burger {
     display: contents;
   }
-  body header nav.navbar div.container-nav div.navbar-header div.hearder-responsive div.menu-burger .btn-burger {
+  body header nav.navbar-head div.container-nav div.navbar-header div.hearder-responsive div.menu-burger .btn-burger {
     background: none;
     border: none;
     padding: 12px 12px;
   }
-  body header nav.navbar div.container-nav div.navbar-header div.hearder-responsive div.menu-burger .btn-burger img.menu-burger {
+  body header nav.navbar-head div.container-nav div.navbar-header div.hearder-responsive div.menu-burger .btn-burger img.menu-burger {
     width: 24px;
     height: 24px;
   }
-  body header nav.navbar div.container-nav div.navbar-header div.hearder-responsive div.logo {
+  body header nav.navbar-head div.container-nav div.navbar-header div.hearder-responsive div.logo {
     margin-left: -20px;
   }
-  body header nav.navbar div.container-nav div.navbar-header div.hearder-responsive div.logo img.logo {
+  body header nav.navbar-head div.container-nav div.navbar-header div.hearder-responsive div.logo img.logo {
     width: 150px;
   }
-  body header nav.navbar div.container-nav div.navbar-header ul.header-ul {
+  body header nav.navbar-head div.container-nav div.navbar-header ul.header-ul {
     display: flex;
   }
-  body header nav.navbar div.container-nav div.navbar-header ul.header-ul a.text-header-4,
-body header nav.navbar div.container-nav div.navbar-header ul.header-ul a.text-header-5 {
+  body header nav.navbar-head div.container-nav div.navbar-header ul.header-ul a.text-header-4,
+body header nav.navbar-head div.container-nav div.navbar-header ul.header-ul a.text-header-5 {
     display: none;
   }
-  body header nav.navbar div.container-nav div.navbar-header ul.header-ul a.text-header-4 .sous-menu,
-body header nav.navbar div.container-nav div.navbar-header ul.header-ul a.text-header-5 .sous-menu {
+  body header nav.navbar-head div.container-nav div.navbar-header ul.header-ul a.text-header-4 .sous-menu,
+body header nav.navbar-head div.container-nav div.navbar-header ul.header-ul a.text-header-5 .sous-menu {
     display: none;
   }
-  body header nav.navbar div.container-nav div.navbar-header div.btn-icons-header {
+  body header nav.navbar-head div.container-nav div.navbar-header div.btn-icons-header {
     margin: 0px;
     display: flex;
   }
-  body header nav.navbar div.container-nav div.navbar-header div.btn-icons-header button.btn-header-2 {
+  body header nav.navbar-head div.container-nav div.navbar-header div.btn-icons-header button.btn-header-2 {
     display: none;
   }
   body footer {
@@ -1393,6 +1394,60 @@ div.panier .formulaire-panier .form-control-pan.total {
 div.panier .formulaire-panier .valid-pan {
   display: flex;
   justify-content: center;
+}
+
+.container-rec {
+  margin: 50px 0px 50px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.container-rec div.prods {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container-rec div.prods .infos-recap .recap-img {
+  width: 200px;
+  border-radius: 15px;
+}
+.container-rec div.com-recap-tot {
+  margin: 30px 0px 0px 30px;
+}
+.container-rec div.com-recap-tot .link-pink:hover {
+  color: #f26b8f;
+}
+.container-rec .row {
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.container-rec .row .p-3 {
+  padding: 2rem !important;
+}
+.container-rec .row .btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #f26b8f;
+  --bs-btn-border-color: #f26b8f;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #f2a7b5;
+  --bs-btn-hover-border-color: #f2a7b5;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #f2a7b5;
+  --bs-btn-active-border-color: #f2a7b5;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #f26b8f;
+  --bs-btn-disabled-border-color: #f26b8f;
+}
+.container-rec .row .btn-primary:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

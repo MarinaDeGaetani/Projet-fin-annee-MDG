@@ -41,12 +41,12 @@
                 <div class="btn-panier">
                     <div class="plus-moins">
                         <input type="number" name="nbr" id="nbr" min="1" class="nbr-form-control" value="1">
-                        <input type="hidden" name="idProduit" id="idProduit" class="form-control" value="<?=$_GET["id"];?>">
+                        <input type="hidden" name="idProduit" id="idProduit" class="form-control" value="<?=$produit->id?>">
                         <input type="hidden" name="prix" id="prix" class="form-control" value="<?=$produit->prix;?>">
                         <input type="hidden" name="titre" id="titre" class="form-control" value="<?=$produit->titre;?>">
                     </div>
                     <button class="ajout-panier">
-                        <a href=""  class="btn-typo"> Ajouter au panier</a>
+                       <p class="btn-typo"> Ajouter au panier</p>
                     </button>
                 </div>
             </form>

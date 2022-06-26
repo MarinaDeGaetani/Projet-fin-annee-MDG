@@ -20,6 +20,7 @@ class PanierController extends AppController{
      */
     public function index(){
 
+
         $panier =  (!empty($_SESSION['panier']['produit']))? $_SESSION['panier']['produit'] : null ;
         $prixTotalCommande = 0;
 
@@ -31,6 +32,8 @@ class PanierController extends AppController{
         }
         $this->render('panier.index', compact('panier', 'prixTotalCommande'));
     }    
+    
+    
     /**
      * Ajout dans le panier
      */
@@ -57,7 +60,6 @@ class PanierController extends AppController{
 
         $produits = $_POST;
         $produitsAll = array();
-
          foreach($produits as $key => $produit){
             $produitSelect = '';
             if(!empty($produits['produit-id-'.$produit])){
