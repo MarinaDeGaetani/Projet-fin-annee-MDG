@@ -41,7 +41,7 @@ class PanierController extends AppController{
             $_SESSION['panier']['produit'][$_POST['idProduit']]['nbr'] += $_POST['nbr'];
             $_SESSION['panier']['produit'][$_POST['idProduit']]['titre'] = $_POST['titre'];            
         } 
-        //header('Location: '.$referer.'');
+        header('Location: '.$referer.'');
        
     }
 
@@ -63,7 +63,7 @@ class PanierController extends AppController{
             if(!empty($produits['produit-id-'.$produit])){
 
                 $produitSelect = $this->Produit->findWithCategory($produit);
-                $produitsAll['produit'][$produitSelect->id]['produit-id'] = $produits['produit-id-'.$produit];
+                $produitsAll['produit'][$produitSelect->id]['produits-id'] = $produits['produit-id-'.$produit];
                 $produitsAll['produit'][$produitSelect->id]['produit-nbr'] = $produits['produit-'.$produit.'-nbr'];
                 $produitsAll['produit'][$produitSelect->id]['produit-total'] = $produits['produit-'.$produit.'-total'];
                 $produitsAll['produit'][$produitSelect->id]['produit'] = $produitSelect;

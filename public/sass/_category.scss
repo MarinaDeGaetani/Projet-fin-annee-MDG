@@ -1,9 +1,14 @@
 body {
   div.img-bandeau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .titre-cate {
       display: flex;
       justify-content: center;
       align-items: center;
+      position: absolute;
     }
   }
   div.pres-cate {
@@ -11,6 +16,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 40px;
       div.sous-cate {
         display: flex;
         flex-direction: column;

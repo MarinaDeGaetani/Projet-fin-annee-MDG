@@ -31,10 +31,10 @@ class ProduitsController extends AppController{
             $this->notFound();
         }
         $souscategory = $this->Produit->findWithSousCategories($_GET['id']);
-        var_dump($souscategory);
+        //var_dump($souscategory);
         $articles = $this->Post->lastByCategory($_GET['id']);
         $categories = $this->Category->all();
-        $this->render('posts.category', compact('articles', 'categories', 'souscategory',));
+        $this->render('posts.category', compact('articles', 'categories', 'categorie','souscategory',));
     }
 
     public function show(){
@@ -54,7 +54,7 @@ class ProduitsController extends AppController{
         App::getInstance()->title = $produit->titre;
 
         $form = new BootstrapForm();
-        $this->render('produits.show', compact('produit','recommandations', 'form'));
+        $this->render('produits.show', compact('produit', 'form', 'recommandations'));
     }
 
 }

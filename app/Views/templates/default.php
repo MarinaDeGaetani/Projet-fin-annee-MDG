@@ -20,7 +20,7 @@
 <header>
     <!-- Classic Menu -->
     <nav class="navbar">
-        <div class="container">
+        <div class="container-nav">
             <div class="navbar-header">
                 <div class="hearder-responsive">
                     <div class="menu-burger">
@@ -203,6 +203,13 @@
 
 </div><!-- /.container -->
 
+<div class="container-arrow">
+    <div class="arrow-up">
+        <div class="arrow">
+            <img src="../public/ressources/icons/arrow-up.png" alt="" class="arrow-icon">
+        </div>
+    </div>
+</div>
 <footer>
     <div class="container-footer">
         <div class="footer-text">

@@ -2,6 +2,7 @@
   <h1>Panier</h1>
  
   <?php 
+  var_dump($_POST);
   if(!empty($panier)){ ?>
     <form action="index.php?p=panier.recapitulatif" method="POST" class="formulaire-panier">
         <?php foreach ($panier as $idProduit => $champs): ?>
@@ -14,7 +15,7 @@
               <label>Produit</label>
               <input type="text" id="produit-<?=$idProduit?>-titre-disabled" name="produit-<?=$idProduit?>-titre-disabled" class="form-control-pan" value="<?=$champs['titre']?>" disabled="disabled">
             </div>
-            sss
+
             <div class="champ-input">
               <label>Nbr</label>
               <input type="number" id="produit-<?=$idProduit?>-nbr" name="produit-<?=$idProduit?>-nbr" class="form-control produit-nbr" value="<?=$champs['nbr']?>"  data-produit="<?=$idProduit?>" data-prix="<?=$champs['prix']?>" min="1">

@@ -3,9 +3,9 @@
 body {
   div.connexion-inscription {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 100px 248px 100px 248px;
+    margin: 100px 0px 100px 0px;
     div.connection {
       display: flex;
       flex-direction: column;
@@ -43,19 +43,21 @@ body {
 }
 
 //Mobile
-
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 1050px) {
   div.connexion-inscription {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 100px 0px 100px 20px;
+  }
+  div.sep {
+    display: none;
+  }
+}
 
-    input.form-control {
-      width: 202px;
-    }
-    div.sep {
-      display: none;
-    }
+@media screen and (max-width: 750px) {
+  input.form-control {
+    width: 202px;
   }
 }

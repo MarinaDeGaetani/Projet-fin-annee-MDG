@@ -314,8 +314,10 @@ body input.email,
 }
 body a.btn-typo,
 body p.btn-typo,
+body button.btn-typo,
 .text-dropdown a.btn-typo,
-.text-dropdown p.btn-typo {
+.text-dropdown p.btn-typo,
+.text-dropdown button.btn-typo {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
@@ -476,13 +478,13 @@ header .navbar {
   width: 100%;
   padding: 0px;
 }
-header .navbar div.container {
+header .navbar div.container-nav {
   background-color: #f2a7b5;
   height: 100px;
   filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
   margin: 0px;
 }
-header .navbar div.container div.navbar-header {
+header .navbar div.container-nav div.navbar-header {
   height: 100px;
   display: flex;
   align-items: center;
@@ -490,11 +492,11 @@ header .navbar div.container div.navbar-header {
   align-content: center;
   flex-direction: row;
 }
-header .navbar div.container div.navbar-header div.menu-burger,
-header .navbar div.container div.navbar-header .menuToggle {
+header .navbar div.container-nav div.navbar-header div.menu-burger,
+header .navbar div.container-nav div.navbar-header .menuToggle {
   display: none;
 }
-header .navbar div.container div.navbar-header div.hearder-responsive {
+header .navbar div.container-nav div.navbar-header div.hearder-responsive {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -502,16 +504,16 @@ header .navbar div.container div.navbar-header div.hearder-responsive {
   justify-content: space-between;
   width: 100%;
 }
-header .navbar div.container div.navbar-header div.hearder-responsive .logo {
+header .navbar div.container-nav div.navbar-header div.hearder-responsive .logo {
   margin-left: 20px;
 }
-header .navbar div.container div.navbar-header div.hearder-responsive .logo img.logo {
+header .navbar div.container-nav div.navbar-header div.hearder-responsive .logo img.logo {
   width: 135px;
 }
-header .navbar div.container div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul {
+header .navbar div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul {
   display: flex;
 }
-header .navbar div.container div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu {
+header .navbar div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu {
   display: none;
   left: 98px;
   position: absolute;
@@ -522,51 +524,51 @@ header .navbar div.container div.navbar-header div.hearder-responsive div.drop-d
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2509803922);
   border-radius: 0px 0px 15px 15px;
 }
-header .navbar div.container div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div {
+header .navbar div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div {
   display: flex;
 }
-header .navbar div.container div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div img.img-drop-down {
+header .navbar div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div img.img-drop-down {
   margin: 30px 35px 34px 25px;
   width: 360px;
   height: 364px;
   border-radius: 18px;
 }
-header .navbar div.container div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div div.div-text-drop-down {
+header .navbar div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div div.div-text-drop-down {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 31px 105px 0px 0px;
 }
-header .navbar div.container div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div div.div-text-drop-down .catégorie-dropdown {
+header .navbar div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div div.div-text-drop-down .catégorie-dropdown {
   display: flex;
   flex-direction: column;
   width: max-content;
   margin-top: 30px;
   align-items: flex-start;
 }
-header .navbar div.container div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div div.div-text-drop-down div.sous-div-text-drop-down {
+header .navbar div.container-nav div.navbar-header div.hearder-responsive div.drop-down-menu ul.header-ul .sous-menu div.sous-menu-div div.div-text-drop-down div.sous-div-text-drop-down {
   display: flex;
   flex-direction: column;
 }
-header .navbar div.container div.navbar-header .text-header-3:hover + .sous-menu,
-header .navbar div.container div.navbar-header .text-header-2:hover + .sous-menu,
-header .navbar div.container div.navbar-header .text-header:hover + .sous-menu {
+header .navbar div.container-nav div.navbar-header .text-header-3:hover + .sous-menu,
+header .navbar div.container-nav div.navbar-header .text-header-2:hover + .sous-menu,
+header .navbar div.container-nav div.navbar-header .text-header:hover + .sous-menu {
   display: block !important;
 }
-header .navbar div.container div.btn-icons-header {
+header .navbar div.container-nav div.btn-icons-header {
   margin-right: 30px;
 }
-header .navbar div.container div.btn-icons-header button.btn-header,
-header .navbar div.container div.btn-icons-header .btn-header-2 {
+header .navbar div.container-nav div.btn-icons-header button.btn-header,
+header .navbar div.container-nav div.btn-icons-header .btn-header-2 {
   border: none;
   background: none;
   padding: 5px;
   cursor: pointer;
 }
-header .navbar div.container div.btn-icons-header button.btn-header img.icons-header,
-header .navbar div.container div.btn-icons-header button.btn-header img.svg-shop,
-header .navbar div.container div.btn-icons-header .btn-header-2 img.icons-header,
-header .navbar div.container div.btn-icons-header .btn-header-2 img.svg-shop {
+header .navbar div.container-nav div.btn-icons-header button.btn-header img.icons-header,
+header .navbar div.container-nav div.btn-icons-header button.btn-header img.svg-shop,
+header .navbar div.container-nav div.btn-icons-header .btn-header-2 img.icons-header,
+header .navbar div.container-nav div.btn-icons-header .btn-header-2 img.svg-shop {
   width: 24px;
 }
 
@@ -587,27 +589,38 @@ header .navbar div.container div.btn-icons-header .btn-header-2 img.svg-shop {
   margin-left: unset;
 }
 
+div.container-arrow {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+div.container-arrow .arrow-up {
+  background: #fff;
+  border: 1px solid #f26b8f;
+  border-radius: 15px;
+  padding: 20px;
+}
+div.container-arrow .arrow-up div.arrow img.arrow-icon {
+  width: 20px;
+}
+
 footer {
   bottom: 0;
-  z-index: auto;
-  display: flex;
-  height: 230px;
-  margin-top: 0px;
+  height: max-content;
+  padding: 30px;
   background-color: #fff;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
 }
 footer div.container-footer {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: flex-start;
   flex-direction: row;
   align-content: center;
-  margin: 25px 0px 0px 97px;
 }
 footer div.container-footer div.footer-text {
   display: flex;
   flex-direction: column;
-  margin-right: 110px;
   align-items: flex-start;
 }
 footer div.container-footer div.footer-icons img.icons-réseaux {
@@ -616,7 +629,6 @@ footer div.container-footer div.footer-icons img.icons-réseaux {
   margin-right: 14px;
 }
 footer div.container-footer div.newsletter {
-  margin-left: 110px;
   width: 300px;
   height: 171px;
   border: 1px solid #f26b8f;
@@ -734,165 +746,47 @@ div.formulaire input.form-control:hover {
 }
 
 @media screen and (max-width: 376px) {
-  body header {
-    /* .menuToggle {
-      display: block;
-      position: relative;
-      top: 50px;
-      left: 50px;
-
-      z-index: 1;
-
-      -webkit-user-select: none;
-      user-select: none;
-
-      input.check-ham {
-        display: block;
-        width: 40px;
-        height: 32px;
-        position: relative;
-        top: -110px;
-        left: -30px;
-
-        cursor: pointer;
-
-        opacity: 0; /* cache */
-    /*   z-index: 2; /* et le place au dessus du hamburger */
-    /* }
-
-      /*
-      * Hambuger
-
-      span.ham-tiret {
-        display: block;
-        width: 33px;
-        height: 4px;
-        margin-bottom: 5px;
-        position: relative;
-        top: -190px;
-        left: -25px;
-
-        background: $rose-fonce;
-        border-radius: 3px;
-
-        z-index: 1;
-
-        transform-origin: 4px 0px;
-
-        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-          background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-
-        span.ham-tiret:first-child {
-          transform-origin: 0% 0%;
-        }
-
-        span.ham-tiret:nth-last-child(2) {
-          transform-origin: 0% 100%;
-        }
-      }
-
-      /* 
-      * Transforme toutes les barres du hamburger
-      * en croix
-
-      input.check-ham:checked ~ span.ham-tiret {
-        opacity: 1;
-        transform: rotate(45deg) translate(-2px, -1px);
-        background: $rose-fonce;
-      }
-
-      /*
-      * cacher celui du milieu
-
-      input.check-ham:checked ~ span.ham-tiret:nth-last-child(3) {
-        opacity: 0;
-        transform: rotate(0deg) scale(0.2, 0.2);
-      }
-
-      /*
-      * le dernier en direction inverse pour la croix
-
-      input.check-ham:checked ~ span.ham-tiret:nth-last-child(2) {
-        transform: rotate(-45deg) translate(0, -1px);
-      }
-      /*
-      *positionnement en absolute
-      * en haut à gauche de l'écran
-
-      ul.menu {
-        position: relative;
-        top: -250px;
-        width: 300px;
-        height: 722px;
-        margin: 0px 0px 0px 300px;
-        padding: 25px;
-        padding-top: 125px;
-
-        background: #ededed;
-        list-style-type: none;
-        -webkit-font-smoothing: antialiased;
-        /* to stop flickering of text in safari */
-    /*transform-origin: 0% 0%;
-        transform: translate(-100%, 0);
-
-        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-
-        a.liens-ham {
-          color: $noir;
-          transition: color 0.3s ease;
-        }
-        a.liens-ham:hover {
-          color: $rose-fonce;
-
-          #menu li.hamubrger-menu {
-            padding: 10px 0;
-            font-size: 22px;
-          }
-        }
-      }
-    }*/
-  }
-  body header nav.navbar div.container {
+  body header nav.navbar div.container-nav {
     height: 150px;
     width: max-content;
   }
-  body header nav.navbar div.container div.navbar-header div.hearder-responsive {
+  body header nav.navbar div.container-nav div.navbar-header div.hearder-responsive {
     display: flex;
   }
-  body header nav.navbar div.container div.navbar-header div.hearder-responsive div.menu-burger {
+  body header nav.navbar div.container-nav div.navbar-header div.hearder-responsive div.menu-burger {
     display: contents;
   }
-  body header nav.navbar div.container div.navbar-header div.hearder-responsive div.menu-burger .btn-burger {
+  body header nav.navbar div.container-nav div.navbar-header div.hearder-responsive div.menu-burger .btn-burger {
     background: none;
     border: none;
     padding: 12px 12px;
   }
-  body header nav.navbar div.container div.navbar-header div.hearder-responsive div.menu-burger .btn-burger img.menu-burger {
+  body header nav.navbar div.container-nav div.navbar-header div.hearder-responsive div.menu-burger .btn-burger img.menu-burger {
     width: 24px;
     height: 24px;
   }
-  body header nav.navbar div.container div.navbar-header div.hearder-responsive div.logo {
+  body header nav.navbar div.container-nav div.navbar-header div.hearder-responsive div.logo {
     margin-left: -20px;
   }
-  body header nav.navbar div.container div.navbar-header div.hearder-responsive div.logo img.logo {
+  body header nav.navbar div.container-nav div.navbar-header div.hearder-responsive div.logo img.logo {
     width: 150px;
   }
-  body header nav.navbar div.container div.navbar-header ul.header-ul {
+  body header nav.navbar div.container-nav div.navbar-header ul.header-ul {
     display: flex;
   }
-  body header nav.navbar div.container div.navbar-header ul.header-ul a.text-header-4,
-body header nav.navbar div.container div.navbar-header ul.header-ul a.text-header-5 {
+  body header nav.navbar div.container-nav div.navbar-header ul.header-ul a.text-header-4,
+body header nav.navbar div.container-nav div.navbar-header ul.header-ul a.text-header-5 {
     display: none;
   }
-  body header nav.navbar div.container div.navbar-header ul.header-ul a.text-header-4 .sous-menu,
-body header nav.navbar div.container div.navbar-header ul.header-ul a.text-header-5 .sous-menu {
+  body header nav.navbar div.container-nav div.navbar-header ul.header-ul a.text-header-4 .sous-menu,
+body header nav.navbar div.container-nav div.navbar-header ul.header-ul a.text-header-5 .sous-menu {
     display: none;
   }
-  body header nav.navbar div.container div.navbar-header div.btn-icons-header {
+  body header nav.navbar div.container-nav div.navbar-header div.btn-icons-header {
     margin: 0px;
     display: flex;
   }
-  body header nav.navbar div.container div.navbar-header div.btn-icons-header button.btn-header-2 {
+  body header nav.navbar div.container-nav div.navbar-header div.btn-icons-header button.btn-header-2 {
     display: none;
   }
   body footer {
@@ -926,9 +820,9 @@ body header nav.navbar div.container div.navbar-header ul.header-ul a.text-heade
 }
 body div.connexion-inscription {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 100px 248px 100px 248px;
+  margin: 100px 0px 100px 0px;
 }
 body div.connexion-inscription div.connection {
   display: flex;
@@ -960,18 +854,21 @@ body div.connexion-inscription div.inscription button.btn-2 {
   margin-top: 67px;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 1050px) {
   div.connexion-inscription {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 100px 0px 100px 20px;
   }
-  div.connexion-inscription input.form-control {
-    width: 202px;
-  }
-  div.connexion-inscription div.sep {
+  div.sep {
     display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  input.form-control {
+    width: 202px;
   }
 }
 body div.formulaire-inscription {
@@ -1220,15 +1117,23 @@ body section.admin-accueil div.commandes-récentes div.button button.btn-affiche
   background-color: #f26b8f;
 }
 
+body div.img-bandeau {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 body div.img-bandeau .titre-cate {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
 }
 body div.pres-cate div.sous-cates {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
 }
 body div.pres-cate div.sous-cates div.sous-cate {
   display: flex;
@@ -1380,10 +1285,12 @@ body .produit-infos input.nbr-form-control {
   outline: none;
   border: none;
 }
+body .produit-infos div#home-tab-pane.tab-pane.fade.text-detail.active.show {
+  max-width: 300px;
+}
 body .recommendation {
   background: linear-gradient(180deg, #ffffff 0%, rgba(251, 225, 230, 0.58) 52.92%, #f2a7b5 100%);
   display: flex;
-  margin: 0px 0px 50px 0px;
 }
 body div.ombre {
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25));
